@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    font-family: monospace;
+    background-color: cadetblue;
+    color: papayawhip;
+}
+body {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+canvas {
+    width: 100%;
+    height: auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    width: 85vw;
+    margin: auto;
+    max-width: 1440px;
+    grid-column-gap: 20px;
+}
+.grid-container .grid-full {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+.grid-container .grid-half-left {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.grid-container .grid-half-right {
+    display: grid;
+    grid-column-start: 7;
+    grid-column-end: 13;
+}
